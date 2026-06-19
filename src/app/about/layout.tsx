@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "trading app mission",
   ],
   alternates: {
-    canonical: "https://tradeinsight.io/about",
+    canonical: "https://tradeinsightbd.netlify.app/about",
   },
   openGraph: {
     title: "About Us – TradeInsight | Our Mission for Traders",
     description:
       "Learn about TradeInsight – our mission to empower traders with the best trading journal app.",
-    url: "https://tradeinsight.io/about",
+    url: "https://tradeinsightbd.netlify.app/about",
   },
   twitter: {
     title: "About Us – TradeInsight | Our Mission for Traders",

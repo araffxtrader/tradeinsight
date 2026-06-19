@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "TradeInsight email",
   ],
   alternates: {
-    canonical: "https://tradeinsight.io/contact",
+    canonical: "https://tradeinsightbd.netlify.app/contact",
   },
   openGraph: {
     title: "Contact Us – TradeInsight | Get Support",
     description:
       "Contact TradeInsight support via email, WhatsApp, or Telegram. We're here to help.",
-    url: "https://tradeinsight.io/contact",
+    url: "https://tradeinsightbd.netlify.app/contact",
   },
   twitter: {
     title: "Contact Us – TradeInsight | Get Support",

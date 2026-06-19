@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "trade replay",
   ],
   alternates: {
-    canonical: "https://tradeinsight.io/features",
+    canonical: "https://tradeinsightbd.netlify.app/features",
   },
   openGraph: {
     title: "Features – TradeInsight Trading Journal App",
     description:
       "Explore TradeInsight features: AI-powered trade insights, advanced analytics, risk management, strategy backtesting, and more.",
-    url: "https://tradeinsight.io/features",
+    url: "https://tradeinsightbd.netlify.app/features",
   },
   twitter: {
     title: "Features – TradeInsight Trading Journal App",

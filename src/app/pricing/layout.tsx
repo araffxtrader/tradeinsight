@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     "Forex journal pricing",
   ],
   alternates: {
-    canonical: "https://tradeinsight.io/pricing",
+    canonical: "https://tradeinsightbd.netlify.app/pricing",
   },
   openGraph: {
     title: "Pricing – TradeInsight Trading Journal App | From $5/month",
     description:
       "TradeInsight pricing: Starter $5/mo, Pro $10/mo, Elite $15/mo. Affordable trading journal plans for all traders.",
-    url: "https://tradeinsight.io/pricing",
+    url: "https://tradeinsightbd.netlify.app/pricing",
   },
   twitter: {
     title: "Pricing – TradeInsight Trading Journal App | From $5/month",

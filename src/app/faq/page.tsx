@@ -47,8 +47,27 @@ export default function FAQPage() {
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
   const toggleItem = (key: string) => setOpenItems((prev) => ({ ...prev, [key]: !prev[key] }));
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqCategories.flatMap((cat) =>
+      cat.questions.map((faq) => ({
+        "@type": "Question",
+        name: faq.q.en,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.a.en,
+        },
+      }))
+    ),
+  };
+
   return (
     <div className="relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
         <div className="hero-gradient absolute inset-0" />
         <div className="grid-bg absolute inset-0 opacity-30" />

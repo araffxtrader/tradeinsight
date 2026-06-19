@@ -31,17 +31,21 @@ export const metadata: Metadata = {
     "best trading journal",
     "TradeInsight journal",
   ],
-  authors: [{ name: "Mehrajul Hasan Araf", url: "https://tradeinsight.io" }],
+  authors: [{ name: "Mehrajul Hasan Araf", url: "https://tradeinsightbd.netlify.app" }],
   creator: "TradeInsight",
   publisher: "TradeInsight",
-  metadataBase: new URL("https://tradeinsight.io"),
+  metadataBase: new URL("https://tradeinsightbd.netlify.app"),
   alternates: {
-    canonical: "https://tradeinsight.io",
+    canonical: "https://tradeinsightbd.netlify.app",
+    languages: {
+      "en": "https://tradeinsightbd.netlify.app",
+      "bn": "https://tradeinsightbd.netlify.app",
+    },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tradeinsight.io",
+    url: "https://tradeinsightbd.netlify.app",
     siteName: "TradeInsight",
     title: "TradeInsight – Best Trading Journal App for Traders",
     description:
@@ -76,6 +80,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "5JSyx0xtz_JdMk5PHyf_Oyv6mL9KXdYRjZasuM9A3pU",
+  },
+  other: {
+    "theme-color": "#6366f1",
+    "referrer": "strict-origin-when-cross-origin",
+    "msapplication-TileColor": "#6366f1",
   },
 };
 

@@ -64,7 +64,7 @@ export default function Home() {
     operatingSystem: "Web",
     description:
       "TradeInsight is the best trading journal app for Forex, Gold, Crypto & Funded Traders. Track trades, analyze performance with AI-powered insights, and master your strategy.",
-    url: "https://tradeinsight.io",
+    url: "https://tradeinsightbd.netlify.app",
     offers: {
       "@type": "AggregateOffer",
       lowPrice: "5",
@@ -92,8 +92,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "TradeInsight",
-    url: "https://tradeinsight.io",
-    logo: "https://tradeinsight.io/logo.png",
+      url: "https://tradeinsightbd.netlify.app",
+      logo: "https://tradeinsightbd.netlify.app/logo.png",
     sameAs: [
       "https://t.me/tradeinsightbd",
     ],

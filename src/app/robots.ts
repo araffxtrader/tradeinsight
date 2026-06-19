@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://tradeinsight.io/sitemap.xml",
+    sitemap: "https://tradeinsightbd.netlify.app/sitemap.xml",
   };
 }

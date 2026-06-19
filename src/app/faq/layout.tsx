@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "how to use TradeInsight",
   ],
   alternates: {
-    canonical: "https://tradeinsight.io/faq",
+    canonical: "https://tradeinsightbd.netlify.app/faq",
   },
   openGraph: {
     title: "FAQ – TradeInsight | Frequently Asked Questions",
     description:
       "Find answers to common questions about TradeInsight – the trading journal app.",
-    url: "https://tradeinsight.io/faq",
+    url: "https://tradeinsightbd.netlify.app/faq",
   },
   twitter: {
     title: "FAQ – TradeInsight | Frequently Asked Questions",

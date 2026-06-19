@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Read the Privacy Policy for TradeInsight trading journal app. Learn how we collect, use, and protect your trading data.",
   alternates: {
-    canonical: "https://tradeinsight.io/privacy",
+    canonical: "https://tradeinsightbd.netlify.app/privacy",
   },
   robots: { index: true, follow: true },
 };

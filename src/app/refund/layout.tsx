@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Read the Refund Policy for TradeInsight trading journal app. Understand our refund terms and conditions.",
   alternates: {
-    canonical: "https://tradeinsight.io/refund",
+    canonical: "https://tradeinsightbd.netlify.app/refund",
   },
   robots: { index: true, follow: true },
 };

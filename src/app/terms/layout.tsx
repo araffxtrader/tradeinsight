@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Read the Terms of Service for TradeInsight trading journal app. Understand the rules and guidelines for using TradeInsight.",
   alternates: {
-    canonical: "https://tradeinsight.io/terms",
+    canonical: "https://tradeinsightbd.netlify.app/terms",
   },
   robots: { index: true, follow: true },
 };

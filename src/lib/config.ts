@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "TradeInsight",
   description: "The world's most advanced trading journal. Track trades, analyze performance, and master your strategy with AI-powered insights.",
-  url: "https://tradeinsight.io",
+  url: "https://tradeinsightbd.netlify.app",
   paymentLink: "https://tradeinsight.readyfoodbd.shop/step/store-checkout-04/",
   telegramUrl: "https://t.me/tradeinsightbd",
   supportEmail: "theiraffx@gmail.com",
