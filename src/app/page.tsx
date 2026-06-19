@@ -56,8 +56,65 @@ const stats = [
 export default function Home() {
   const { locale } = useLanguage();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "TradeInsight",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web",
+    description:
+      "TradeInsight is the best trading journal app for Forex, Gold, Crypto & Funded Traders. Track trades, analyze performance with AI-powered insights, and master your strategy.",
+    url: "https://tradeinsight.io",
+    offers: {
+      "@type": "AggregateOffer",
+      lowPrice: "5",
+      highPrice: "15",
+      priceCurrency: "USD",
+      offerCount: 3,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "1000",
+    },
+    author: {
+      "@type": "Organization",
+      name: "TradeInsight",
+      url: "https://tradeinsight.io",
+    },
+    brand: {
+      "@type": "Brand",
+      name: "TradeInsight",
+    },
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "TradeInsight",
+    url: "https://tradeinsight.io",
+    logo: "https://tradeinsight.io/logo.png",
+    sameAs: [
+      "https://t.me/tradeinsightbd",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "theiraffx@gmail.com",
+      contactType: "customer service",
+    },
+  };
+
   return (
     <div className="relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <GradientOrbs />
@@ -448,6 +505,53 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="relative py-16 sm:py-20 border-t border-border bg-muted/20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6 text-center">
+              {locale === "en" ? "Why TradeInsight is the Best Trading Journal App" : "কেন TradeInsight সেরা ট্রেডিং জার্নাল অ্যাপ"}
+            </h2>
+            <div className="prose prose-neutral dark:prose-invert max-w-none text-muted-foreground leading-relaxed space-y-4 text-sm sm:text-base">
+              <p>
+                {locale === "en"
+                  ? "TradeInsight is a powerful trading journal app designed for Forex, Gold, Crypto, and Funded Traders. Whether you're a beginner or a professional trader, TradeInsight helps you track every trade, analyze your performance, and improve your strategy with AI-powered insights."
+                  : "TradeInsight হলো একটি শক্তিশালী ট্রেডিং জার্নাল অ্যাপ যা Forex, Gold, Crypto এবং Funded Tradersদের জন্য ডিজাইন করা হয়েছে। আপনি যদি একজন নতুন বা পেশাদার ট্রেডার হন, TradeInsight আপনাকে প্রতিটি ট্রেড ট্র্যাক করতে, আপনার পারফরম্যান্স বিশ্লেষণ করতে এবং AI-চালিত ইনসাইটস দিয়ে আপনার কৌশল উন্নত করতে সাহায্য করে।"}
+              </p>
+              <p>
+                {locale === "en"
+                  ? "With TradeInsight, you get advanced analytics including win rate, profit factor, Sharpe ratio, and equity curves. Our risk management tools help you monitor daily loss limits and position sizing. The strategy backtesting engine lets you test your trading ideas before risking real capital."
+                  : "TradeInsight দিয়ে আপনি উইন রেট, প্রফিট ফ্যাক্টর, শার্প রেশিও এবং ইক্যুইটি কার্ভ সহ উন্নত অ্যানালিটিক্স পান। আমাদের ঝুঁকি ব্যবস্থাপনা টুলস আপনাকে দৈনিক ক্ষতির সীমা এবং পজিশন সাইজিং পর্যবেক্ষণ করতে সাহায্য করে। স্ট্র্যাটেজি ব্যাকটেস্টিং ইঞ্জিন আপনাকে আসল পুঁজি ঝুঁকিতে ফেলার আগে আপনার ট্রেডিং আইডিয়া পরীক্ষা করতে দেয়।"}
+              </p>
+              <p>
+                {locale === "en"
+                  ? "Join 1,000+ active traders who trust TradeInsight as their go-to trading journal. Start with a plan from just $5/month and take your trading to the next level."
+                  : "১,০০০+ সক্রিয় ট্রেডারের সাথে যোগ দিন যারা TradeInsight-কে তাদের প্রধান ট্রেডিং জার্নাল হিসেবে বিশ্বাস করে। মাত্র $৫/মাস থেকে শুরু করুন এবং আপনার ট্রেডিংকে পরবর্তী স্তরে নিয়ে যান।"}
+              </p>
+            </div>
+
+            {/* Internal Links */}
+            <div className="mt-10 flex flex-wrap justify-center gap-3">
+              <Link href="/features" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                {locale === "en" ? "Explore Features" : "ফিচার দেখুন"} <ChevronRight className="h-3 w-3" />
+              </Link>
+              <Link href="/pricing" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                {locale === "en" ? "View Pricing" : "মূল্য দেখুন"} <ChevronRight className="h-3 w-3" />
+              </Link>
+              <Link href="/about" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                {locale === "en" ? "About TradeInsight" : "TradeInsight সম্পর্কে"} <ChevronRight className="h-3 w-3" />
+              </Link>
+              <Link href="/faq" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                {locale === "en" ? "FAQ" : "সচরাচর জিজ্ঞাসা"} <ChevronRight className="h-3 w-3" />
+              </Link>
+              <Link href="/contact" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                {locale === "en" ? "Contact Support" : "সাপোর্টে যোগাযোগ"} <ChevronRight className="h-3 w-3" />
+              </Link>
             </div>
           </AnimatedSection>
         </div>

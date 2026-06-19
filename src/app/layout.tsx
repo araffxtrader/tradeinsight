@@ -9,39 +9,74 @@ import MouseGlow from "@/components/MouseGlow";
 
 export const metadata: Metadata = {
   title: {
-    default: "TradeInsight — Premium Trading Journal & Analytics",
-    template: "%s | TradeInsight",
+    default: "TradeInsight – Best Trading Journal App for Traders",
+    template: "%s | TradeInsight – Trading Journal App",
   },
   description:
-    "The world's most advanced trading journal. Track trades, analyze performance, and master your strategy with AI-powered insights. Built for Forex, Gold, Crypto & Funded Traders.",
+    "TradeInsight is the best trading journal app for Forex, Gold, Crypto & Funded Traders. Track trades, analyze performance with AI-powered insights, and master your strategy. Join 1,000+ traders using TradeInsight.",
   keywords: [
+    "TradeInsight",
+    "Trade Insight",
+    "TradeInsight app",
     "trading journal",
+    "TradeInsight trading journal",
     "trade tracker",
     "forex journal",
-    "crypto trading",
-    "funded trader",
+    "crypto trading journal",
+    "funded trader journal",
     "trading analytics",
-    "prop firm",
+    "prop firm journal",
     "performance tracking",
+    "trading journal app",
+    "best trading journal",
+    "TradeInsight journal",
   ],
-  authors: [{ name: "TradeInsight" }],
+  authors: [{ name: "Mehrajul Hasan Araf", url: "https://tradeinsight.io" }],
   creator: "TradeInsight",
+  publisher: "TradeInsight",
+  metadataBase: new URL("https://tradeinsight.io"),
+  alternates: {
+    canonical: "https://tradeinsight.io",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://tradeinsight.io",
     siteName: "TradeInsight",
-    title: "TradeInsight — Premium Trading Journal & Analytics",
+    title: "TradeInsight – Best Trading Journal App for Traders",
     description:
-      "The world's most advanced trading journal. Track trades, analyze performance, and master your strategy.",
+      "TradeInsight is the best trading journal app for Forex, Gold, Crypto & Funded Traders. Track trades, analyze performance with AI-powered insights, and master your strategy.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "TradeInsight – Trading Journal App",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TradeInsight — Premium Trading Journal & Analytics",
+    title: "TradeInsight – Best Trading Journal App for Traders",
     description:
-      "The world's most advanced trading journal. Track trades, analyze performance, and master your strategy.",
+      "TradeInsight is the best trading journal app for Forex, Gold, Crypto & Funded Traders. Track trades, analyze performance with AI-powered insights.",
+    images: ["/og-image.png"],
+    creator: "@tradeinsightbd",
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "5JSyx0xtz_JdMk5PHyf_Oyv6mL9KXdYRjZasuM9A3pU",
+  },
 };
 
 export default function RootLayout({
